@@ -1,4 +1,9 @@
+# Public site: everything is crawlable. Only 404.html is excluded from indexing (via its robots meta tag).
 User-agent: *
 Allow: /
 
-Sitemap: https://bmi-gilt-five.vercel.app/sitemap.xml
+# OAI-SearchBot crawls for ChatGPT search results. It is separate from GPTBot (model training), which is not mentioned here.
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
